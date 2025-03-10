@@ -17,17 +17,6 @@ enum{
 		"Use Advanced Start-up.", "Use Restore Point", "Uninstall and reinstall the device using device manager.", "Restart the Windows Update services.", 2
 	],
 	[
-		MATCH,
-		"Match the message types in the Windows 10 Event Viewer with their description. (Not all options are used.)",
-		["Information", "Warning", "Error", "Critical", "Success Audit", "Failure Audit"],
-		["A successful event is logged",
-		"Immediate action is required.",
-		"A security event has been successful",
-		"A problem exists, but no immediate action is required",
-		"There is an indication of a potential problem with a software component that is not functioning ideally"],
-		[1, 4, 5, 3, 2]
-	],
-	[
 		1,
 		"A user is troubleshooting a connectivity issue from the PC to a web server and wants to see a list of the traffic stops between the PC and the web server. What is the best Windows command to select to do the job?",
 		"bootrec", "diskpart", "recover", "tracert", "tasklist", 4
@@ -297,7 +286,7 @@ var IncorrectAnswers: Array[int]
 func _ready() -> void:
 	print(Questions.size())
 	#Answers.resize(Questions.size())
-	#Questions.shuffle()
+	Questions.shuffle()
 	if Questions[0][0] == MATCH:
 		PrepareMatchQuestion(0)
 	else:
