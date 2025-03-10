@@ -1,0 +1,72 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjpjtg14jqvy2"]
+
+[ext_resource type="Script" path="res://Chapters/chapter_10_11_checkpoint.gd" id="1_q0wmw"]
+
+[node name="Chapter 10-11 Checkpoint" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q0wmw")
+
+[node name="Answers" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="Label" type="RichTextLabel" parent="Answers"]
+layout_mode = 2
+fit_content = true
+
+[node name="NextQuestion" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -58.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Next"
+
+[node name="PrevQuestion" type="Button" parent="."]
+visible = false
+offset_top = 590.0
+offset_right = 106.0
+offset_bottom = 648.0
+text = "Back"
+
+[node name="QuestionNumber" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -156.0
+offset_right = 20.0
+offset_bottom = -133.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[connection signal="pressed" from="NextQuestion" to="." method="_on_next_question_pressed"]
+[connection signal="pressed" from="PrevQuestion" to="." method="_on_prev_question_pressed"]
