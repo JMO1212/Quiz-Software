@@ -38,6 +38,11 @@ enum{
 	],
 	[
 		1,
+		"A user of a Windows 10 PC wants to automatically sync the user profile across various Windows 10 devices that the user owns. How can the user accomplish this?",
+		"Have the user sign into all devices with the Microsoft account of the user.", "Use gpupdate to propagate the group policy to other devices.", "Ensure that the user is in the proper group so that the group policy will be applied.", "Make sure that OneDrive file sync is disabled.", 1
+	],
+	[
+		1,
 		"Which question is an open ended question that could be used when helping a customer troubleshoot a Windows problem?",
 		"What programs have you installed recently?", "Have you changed your password recently?", "Can you boot the operating system?", "Do you get a login prompt when the computer boots?", 1
 	],
