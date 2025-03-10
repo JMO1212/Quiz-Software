@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwbv5joorkojn"]
+
+[ext_resource type="Script" uid="uid://xg6t5mt31xls" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Chapter 10-11 Checkpoint" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Chapter 10-11 Checkpoint"
+
+[node name="Chapter 11 Exam" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Chapter 11 Exam"
+
+[node name="Chapter 11 Match Questions" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Chapter 11 Exam Match Questions"
+
+[connection signal="pressed" from="VBoxContainer/Chapter 10-11 Checkpoint" to="." method="_on_chapter_1011_checkpoint_pressed"]
+[connection signal="pressed" from="VBoxContainer/Chapter 11 Exam" to="." method="_on_chapter_11_exam_pressed"]
+[connection signal="pressed" from="VBoxContainer/Chapter 11 Match Questions" to="." method="_on_chapter_11_match_questions_pressed"]

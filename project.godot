@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="quiz"
-run/main_scene="res://Chapters/chapter_11_exam.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="uid://bwbv5joorkojn"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
