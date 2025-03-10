@@ -69,6 +69,7 @@ var GivenAnswer: Array = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Questions.shuffle()
 	PrepareQuestion(0)
 
 
@@ -101,9 +102,6 @@ func PrepareQuestion(Num:int):
 		var CategoryButton = Button.new()
 		CategoryButton.custom_minimum_size.y = 30
 		CategoryButton.pressed.connect(OnCategoryButtonPressed.bind(CategoryButton))
-		
-		#print($Options.size.x)
-		print(CategoryLabel.custom_minimum_size)
 		
 		CategoriesBox.add_child(CategoryVBox)
 		CategoryLabel.text = Category

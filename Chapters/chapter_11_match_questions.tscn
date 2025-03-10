@@ -30,6 +30,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="NextQuestion" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1174.0
 offset_top = 662.0
 offset_right = 1280.0

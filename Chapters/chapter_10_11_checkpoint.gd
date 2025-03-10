@@ -175,7 +175,7 @@ var IncorrectAnswers: Array[int]
 func _ready() -> void:
 	print(Questions.size())
 	#Answers.resize(Questions.size())
-	#Questions.shuffle()
+	Questions.shuffle()
 	MakeAnswerButtons(Questions[0])
 	$QuestionNumber.text = "1/" + str(Questions.size())
 

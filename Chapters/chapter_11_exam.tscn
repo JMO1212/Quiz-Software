@@ -21,6 +21,23 @@ grow_horizontal = 2
 layout_mode = 2
 fit_content = true
 
+[node name="MatchContainer" type="VBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 40.0
+
+[node name="Question" type="RichTextLabel" parent="MatchContainer"]
+layout_mode = 2
+fit_content = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MatchContainer"]
+layout_mode = 2
+
+[node name="Options" type="VBoxContainer" parent="MatchContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Categories" type="VBoxContainer" parent="MatchContainer/HBoxContainer"]
+layout_mode = 2
+
 [node name="NextQuestion" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 3

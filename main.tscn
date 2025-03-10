@@ -25,6 +25,7 @@ layout_mode = 2
 text = "Chapter 11 Exam"
 
 [node name="Chapter 11 Match Questions" type="Button" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Chapter 11 Exam Match Questions"
 
