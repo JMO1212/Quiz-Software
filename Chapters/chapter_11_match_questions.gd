@@ -139,3 +139,7 @@ func _on_next_question_pressed() -> void:
 	else:
 		$Score.text = "Incorrect"
 	GivenAnswer = []
+
+
+func _on_prev_question_pressed() -> void:
+	pass # Replace with function body.
