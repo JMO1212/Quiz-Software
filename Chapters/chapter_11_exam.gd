@@ -401,6 +401,7 @@ func _on_next_question_pressed() -> void:
 
 func _on_prev_question_pressed() -> void:
 	if QuestionNumber > 0:
+		GivenAnswer = []
 		MakeAnswerButtons(Questions[QuestionNumber-1])
 		QuestionNumber-=1
 		$QuestionNumber.text = str(QuestionNumber+1) + "/" + str(Questions.size())
