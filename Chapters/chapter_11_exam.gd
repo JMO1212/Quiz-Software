@@ -1,16 +1,18 @@
 extends Control
 
+class_name BaseExam
+
 var QuestionNumber = 0
 var GivenAnswer:Array = []
 enum{
 	ZERO,
 	SINGLE,
-	TWO,
-	THREE,
+	DOUBLE,
+	TRIPLE,
 	MATCH,
 }
 
-@export var Questions: Array[Array] = [
+var Questions: Array[Array] = [
 	[
 		1,
 		"A user tries to install an application on a Windows 10 Pro PC but it fails. The user tries to uninstall the application but it fails to uninstall. What option can be used to address this issue without loss of data or applications?",
