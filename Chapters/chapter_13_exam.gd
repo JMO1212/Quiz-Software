@@ -95,7 +95,7 @@ func _ready() -> void:
 		[
 			SINGLE,
 			"What are signatures as they relate to security threats?",
-			"a unique encryption code used by a known attacker","the beginning or end of a malware segment that has a specific cyclic redundancy check number","one or more code patterns within a specific type of malware","one or more code patterns within a specific type of malware",3
+			"a unique encryption code used by a known attacker","the beginning or end of a malware segment that has a specific cyclic redundancy check number","one or more code patterns within a specific type of malware","the checksum associated with each specific type of malware that is stored in a virus table",3
 		],
 		[
 			DOUBLE,
