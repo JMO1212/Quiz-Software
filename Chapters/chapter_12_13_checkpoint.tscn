@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3nh4cqk6iv8b"]
+
+[ext_resource type="PackedScene" uid="uid://dwkafhq27ja07" path="res://Chapters/chapter_11_exam.tscn" id="1_doqbg"]
+[ext_resource type="Script" uid="uid://d1m15dxm5ehg2" path="res://Chapters/chapter_12_13_checkpoint.gd" id="2_35ega"]
+
+[node name="Chapter 12-13 Checkpoint" instance=ExtResource("1_doqbg")]
+script = ExtResource("2_35ega")

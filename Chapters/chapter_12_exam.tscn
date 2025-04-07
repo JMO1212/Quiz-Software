@@ -1,10 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ct3v3ywlwhyfy"]
 
 [ext_resource type="PackedScene" uid="uid://dwkafhq27ja07" path="res://Chapters/chapter_11_exam.tscn" id="1_yu6e3"]
-[ext_resource type="Script" uid="uid://bkgn268or5jxj" path="res://chapter_12_exam.gd" id="2_lba10"]
+[ext_resource type="Script" uid="uid://bkgn268or5jxj" path="res://Chapters/chapter_12_exam.gd" id="2_lba10"]
 
 [node name="Chapter 12 Exam" instance=ExtResource("1_yu6e3")]
 script = ExtResource("2_lba10")
-
-[node name="MatchContainer" parent="." index="1"]
-layout_mode = 0

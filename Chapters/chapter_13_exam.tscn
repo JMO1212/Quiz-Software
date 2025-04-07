@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2hj7eww8i3id"]
+
+[ext_resource type="PackedScene" uid="uid://dwkafhq27ja07" path="res://Chapters/chapter_11_exam.tscn" id="1_2rxt2"]
+[ext_resource type="Script" uid="uid://ecq1kactdlrl" path="res://Chapters/chapter_13_exam.gd" id="2_nhsf3"]
+
+[node name="Chapter 13 Exam" instance=ExtResource("1_2rxt2")]
+script = ExtResource("2_nhsf3")

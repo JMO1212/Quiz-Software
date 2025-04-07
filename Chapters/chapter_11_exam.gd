@@ -10,6 +10,7 @@ enum{
 	DOUBLE,
 	TRIPLE,
 	MATCH,
+	IMAGE
 }
 
 var Questions: Array[Array] = [
